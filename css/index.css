@@ -12,7 +12,7 @@
     --bleu-clair: #DEEBFF;
     --gris: #F2F2F2;
     --font-size: 22px;
-    --margin-coté: 66px;
+    --margin-cote: 66px;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -101,7 +101,7 @@ h3 {
 /* ---Localisation & Filtres--- */
 
 .localisation {
-    margin: 45px var(--margin-coté);
+    margin: 45px var(--margin-cote);
     display: flex;
     flex-direction: column;
 }
@@ -267,11 +267,12 @@ h3 {
     justify-content: space-between;
 }
 
-#hebergements>div>.end {
+#hebergements>div>.end a {
     font-weight: 700;
+    text-decoration: none;
 }
 
-#hebergements>div>.end:hover {
+#hebergements>div>.end a:hover {
     cursor: pointer;
     text-decoration: underline;
 }
@@ -380,7 +381,7 @@ h3 {
 /* ---Section Activités--- */
 
 #activites {
-    margin: 50px var(--margin-coté);
+    margin: 50px var(--margin-cote);
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
@@ -456,7 +457,7 @@ h3 {
 /* -----Footer----- */
 
 footer {
-    padding: 60px var(--margin-coté);
+    padding: 60px var(--margin-cote);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -492,7 +493,7 @@ footer .colonne a:hover {
 
 @media screen and (max-width: 992px) {
     * {
-        --margin-coté: 54px;
+        --margin-cote: 54px;
     }
     .localisation .tags .tags_title {
         width: 100%;
@@ -521,7 +522,7 @@ footer .colonne a:hover {
 
 @media screen and (max-width: 768px) {
     * {
-        --margin-coté: 40px;
+        --margin-cote: 40px;
     }
     .nav-wrapper {
         margin: 0;
